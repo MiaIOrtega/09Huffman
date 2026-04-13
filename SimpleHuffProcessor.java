@@ -1,6 +1,6 @@
 /*  Student information for assignment:
  *
- *  On OUR honor, Chinedum Nwogu (and <NAME2),
+ *  On OUR honor, Chinedum Nwogu and Mia Ortega,
  *  this programming assignment is OUR own work
  *  and WE have not provided this code to any other student.
  *
