@@ -1,12 +1,12 @@
 /*  Student information for assignment:
  *
- *  On <MY|OUR> honor, <Chinedum Nwogu> (and <NAME2),
- *  this programming assignment is <MY|OUR> own work
- *  and <I|WE> have not provided this code to any other student.
+ *  On OUR honor, Chinedum Nwogu (and <NAME2),
+ *  this programming assignment is OUR own work
+ *  and WE have not provided this code to any other student.
  *
  *  Number of slip days used: 2
  *
- *  Student 1: Chinedum Nwogu hello
+ *  Student 1: Chinedum Nwogu
  *  UTEID: cgn477
  *  email address: cgn477@my.utexas.edu
  *
