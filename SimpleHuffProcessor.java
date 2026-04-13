@@ -14,8 +14,8 @@
  *  UTEID: 
  *  email address:
  *
- *  Grader name:
- *  Section number:
+ *  Grader name: Daniel Ramirez
+ *  Section number: 52960
  */
 
 import java.io.IOException;
