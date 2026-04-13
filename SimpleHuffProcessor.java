@@ -6,7 +6,7 @@
  *
  *  Number of slip days used: 2
  *
- *  Student 1: Chinedum Nwogu
+ *  Student 1: Chinedum Nwogu idiot idiot
  *  UTEID: cgn477
  *  email address: cgn477@my.utexas.edu
  *
