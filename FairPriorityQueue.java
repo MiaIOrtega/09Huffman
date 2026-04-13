@@ -29,35 +29,35 @@ public class FairPriorityQueue<E extends Comparable<? super E>> {   // I think I
         TreeNode node = null;
         if (element instanceof TreeNode) {
             node = (TreeNode) element;
-        }
-        
-        for (int i = 0; i < queue.size(); i++) {
-            E val = queue.get(i);
             
-            if (val instanceof TreeNode) {
-                TreeNode otherNode = (TreeNode) val;
+            for (int i = 0; i < queue.size(); i++) {
+                E val = queue.get(i);
                 
-                if (node.compareTo(otherNode) < 0) {        // sorts by priority then value (idk if that correct)
-                    queue.add(i, element);
-                    i = queue.size();
-                } else if (node.compareTo(otherNode) == 0) {
-                    if (node.getValue() < otherNode.getValue()) {
+                if (val instanceof TreeNode) {
+                    TreeNode otherNode = (TreeNode) val;
+                    
+                    if (node.compareTo(otherNode) < 0) {        // sorts by priority then value (idk if that correct)
                         queue.add(i, element);
                         i = queue.size();
+                    } else if (node.compareTo(otherNode) == 0) {
+                        if (node.getValue() < otherNode.getValue()) {
+                            queue.add(i, element);
+                            i = queue.size();
+                        }
                     }
+                    
+//                    if (node.compareTo(otherNode) < 0 || (node.compareTo(otherNode) == 0 &&   // more efficient conditional
+//                            node.getValue() < otherNode.getValue())) {
+//                        queue.add(i, element);
+//                        i = queue.size();
+//                    }
+                    
+//                    if (node.compareTo(otherNode) < 0) {      // implementation that sorts only by frequency
+//                        queue.add(i, element);
+//                        i = queue.size();
+//                    }
                 }
-                
-//                if (node.compareTo(otherNode) < 0 || (node.compareTo(otherNode) == 0 &&   // more efficient conditional
-//                        node.getValue() < otherNode.getValue())) {
-//                    queue.add(i, element);
-//                    i = queue.size();
-//                }
-                
-//                if (node.compareTo(otherNode) < 0) {      // implementation that sorts only by frequency
-//                    queue.add(i, element);
-//                    i = queue.size();
-//                }
-            }
+            }  
         }
         
         if (isEmpty() || !queue.contains(element)) {
